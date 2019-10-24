@@ -1,4 +1,15 @@
-((View as raw text))
+# easysperry
+
+Straightforward Python and R interfaces for parameterizing and running John Sperry's 2017 optimization model based on hydraulic risk and photosynthetic gain.
+
+## Under Construction
+
+[Riley Leff](https://github.com/RileyLeff "Riley's Github") (<riley.leff@pnnl.gov>) is working on it.
+
+This project relies heavily on a C++ port of John Sperry's model put together by Henry Todd.  This repo is currently just a fork of his work.  See the original README below.
+
+
+------------
 
 Sperry Model, C++ Version
 Ported from the original VBA implementation
@@ -175,7 +186,7 @@ Outputs:
 Sequential year processing: When running multiple years of data in a single dataset, the years
 can be treated as entirely independent (the default) or can work from a continuous water budget.
 
-*Independent year mode (default)
+Independent year mode (default)
 	-Set "Use GS Data" to "n" under "Program Options"
 	-Use growing season trimmed data (see the example: "dataset.csv").
 	-Ensure that the growing season limits are defined in "seasonlimits.csv"
@@ -194,7 +205,7 @@ growing season.
 
 -------------
 
-*Sequential year mode:
+Sequential year mode:
 	-Set "Use GS Data" to "y" under "Program Options"
 	-Use full-year data (see the example: "dataset - full year example.csv")
 	-Ensure that the growing season limits are defined in "seasonlimits.csv"
@@ -238,5 +249,5 @@ Contact:
 
 For specific questions about this C++ version of the model, contact:
 Henry Todd
-henry.todd@utah.edu
-hnt1137@gmail.com
+<henry.todd@utah.edu>
+<hnt1137@gmail.com>
